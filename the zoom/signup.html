@@ -1,0 +1,95 @@
+<html lang="ko">
+    <!-- 예시: sokuri.html (사이드바 포함, 전체 구성 완성 버전) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>소쿠리 - 더 ZOOM</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .main-layout {
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 200px;
+      background: #f2f2f2;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar h3 {
+      margin-top: 0;
+    }
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+    .content img {
+      width: 80%;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-banner">회원 가입시 다양한 상품들이 1+1, 더 ZOOM!!</div>
+  <div class="header">
+    <a href="index.html"><img class="logo" src="remove_background.webp" alt="더줌 로고"></a>
+    <div class="search-box">
+      <input type="text" placeholder="검색어를 입력하세요 🔍">
+    </div>
+    <div class="icons">
+      <div class="icon-block">
+        <a href="sokuri.html"><img src="sokuri.JPG" alt="소쿠리"><div>소쿠리</div></a>
+      </div>
+      <div class="icon-block">
+        <a href="baguni.html"><img src="baguni.JPG" alt="바구니"><div>바구니</div></a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-bar">
+    <div class="nav-menu">
+      <a href="index.html">☰</a>
+      <a href="page.html">카테고리</a>
+      <a href="page.html">신상품</a>
+      <a href="page.html">베스트</a>
+      <a href="page.html">더 ZOOM</a>
+      <a href="page.html">수산물</a>
+      <a href="page.html">농산물</a>
+    </div>
+    <div class="login-menu">
+      <a href="signup.html">회원가입</a>
+      <a href="login.html">로그인</a>
+      <a href="help.html">고객센터</a>
+    </div>
+  </div>
+  <div class="main-layout">
+    <!-- <aside class="sidebar">
+      <h3>카테고리</h3>
+      <ul>
+        <li><a href="page.html">신선식품</a></li>
+        <li><a href="page.html">수산물</a></li>
+        <li><a href="page.html">농산물</a></li>
+        <li><a href="page.html">더 ZOOM 추천</a></li>
+      </ul>
+    </aside> -->
+    <section class="content">
+       <!-- <div class="top-banner">회원 가입시 다양한 상품들이 1+1, 더 ZOOM!!</div>
+  <div class="header">...로고/검색/아이콘...</div>
+  <div class="nav-bar">...메뉴 및 로그인 링크...</div> -->
+
+  <div style="padding: 40px; max-width: 600px; margin: auto;">
+    <h2>회원가입</h2>
+    <form>
+      <input type="text" placeholder="아이디" required><br><br>
+      <input type="password" placeholder="비밀번호" required><br><br>
+      <input type="email" placeholder="이메일" required><br><br>
+      <button type="submit">가입하기</button>
+    </form>
+  </div>
+    </section>
+  </div>
+</body>
+</html>
+
+<!-- 같은 구조를 그대로 복사해서 baguni.html, login.html, signup.html, help.html, page.html 등에 적용하면 됩니다. 각 페이지의 중앙 콘텐츠(`section.content`)만 다르게 작성하면 됩니다. -->
